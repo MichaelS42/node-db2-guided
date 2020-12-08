@@ -1,6 +1,6 @@
 const express = require('express');
 
-const db = require('../../data/dbConfig');
+const db = require('../../data/dbConfig'); // move this to a model
 
 // WE DO NOT DO THIS HERE
 // const knex = require('knex');
