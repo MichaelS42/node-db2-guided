@@ -1,6 +1,6 @@
 const express = require('express');
 
-const db = require()
+const db = require('../../data/dbConfig');
 
 // WE DO NOT DO THIS HERE
 // const knex = require('knex');
