@@ -6,6 +6,9 @@ exports.up = function(knex) {
     // name: unique, not null
     table.text('name', 128).unique().notNullable();
     // avgWeightOZ: not null
+    table.decimal('avgWeightOZ').unique();
+    // delicious: boolean
+    table.de
   });
 };
 
