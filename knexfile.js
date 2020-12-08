@@ -8,7 +8,9 @@ module.exports = {
       filename: './data/produce.db3'
     },
     useNullAsDefault: true,
-    
+    migrations: {
+      di
+    }
   },
 
   staging: {
