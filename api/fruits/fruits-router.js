@@ -37,7 +37,7 @@ router.post('/', (req, res) => {
   const fruitData = req.body;
   db('fruits').insert(fruitData)
     .then(ids => {
-      db('fruits').where({ id: ids[0] })
+      return db('fruits').where({ id: ids[0] })
         .then(newFruitEntry => {
           res.status(201).json(newFruitEntry);
         });
