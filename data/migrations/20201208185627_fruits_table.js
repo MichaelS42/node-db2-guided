@@ -12,6 +12,7 @@ exports.up = function(knex) {
   });
 };
 
-exports.down = function(knex) {
+exports.down = function (knex) {
+  // write this first
   return knex.schema.dropTableIfExists('fruits');
 };
