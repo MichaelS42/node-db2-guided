@@ -8,7 +8,7 @@ exports.up = function(knex) {
     // avgWeightOZ: not null
     table.decimal('avgWeightOZ').unique();
     // delicious: boolean
-    table.de
+    table.boolean('delicious');
   });
 };
 
