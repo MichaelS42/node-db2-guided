@@ -5,6 +5,7 @@ exports.up = function(knex) {
     table.increments();
     // name: unique, not null
     table.text('name', 128).unique().notNullable();
+    // avgWeightOZ: not null
   });
 };
 
